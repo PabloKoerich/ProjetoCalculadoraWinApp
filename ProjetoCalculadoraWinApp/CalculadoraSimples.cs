@@ -2,6 +2,8 @@ namespace ProjetoCalculadoraWinApp
 {
     public partial class CalculadoraSimples : Form
     {
+        private string histórico;
+
         public CalculadoraSimples()
         {
             InitializeComponent();
@@ -35,9 +37,16 @@ namespace ProjetoCalculadoraWinApp
         private void BotaoLimpar(object sender, EventArgs e) // opção limpar tela.
         {
             txtPrimeiroNumero.Clear();
-            txtSegundoNumero.Clear();   
-            txtResultado.Clear();   
+            txtSegundoNumero.Clear();
+            txtResultado.Clear();
             rdbAdicao.Checked = true;
         }
+
+        private void ListaHistorico(object sender, EventArgs e) // Lista de histórico de Operações.
+        {
+            string ListaHistorico = listBox1
+                
+        }    
+            
     }
 }

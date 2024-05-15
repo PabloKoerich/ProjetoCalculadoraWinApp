@@ -208,6 +208,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(360, 116);
             listBox1.TabIndex = 8;
+            listBox1.SelectedIndexChanged += ListaHistorico;
             // 
             // label4
             // 
