@@ -2,7 +2,7 @@ namespace ProjetoCalculadoraWinApp
 {
     public partial class CalculadoraSimples : Form
     {
-        private string histórico;
+        private string historico; 
 
         public CalculadoraSimples()
         {
@@ -18,18 +18,14 @@ namespace ProjetoCalculadoraWinApp
             // checagem da operação escolhida.
             double resultado = 0;
 
-            if (rdbAdicao.Checked)
-                resultado = primeiroNumero + segundoNumero;
+            if (rdbAdicao.Checked) resultado = primeiroNumero + segundoNumero;
 
-            if (rdbSubtracao.Checked)
-                resultado = primeiroNumero - segundoNumero;
+            if (rdbSubtracao.Checked) resultado = primeiroNumero - segundoNumero;
 
-            if (rdbMultiplicacao.Checked)
-                resultado = primeiroNumero * segundoNumero;
+            if (rdbMultiplicacao.Checked) resultado = primeiroNumero * segundoNumero;
 
-            if (rdbDivisao.Checked)
-                resultado = primeiroNumero / segundoNumero;
-
+            if (rdbDivisao.Checked) resultado = primeiroNumero / segundoNumero;
+            
             // calcular e imprimir na tela o resultado.
             txtResultado.Text = resultado.ToString();
         }
@@ -44,9 +40,8 @@ namespace ProjetoCalculadoraWinApp
 
         private void ListaHistorico(object sender, EventArgs e) // Lista de histórico de Operações.
         {
-            string ListaHistorico = listBox1
-                
+            string ListaHistorico = historico; 
+            historico = txtResultado.Text;
         }    
-            
-    }
+     }
 }

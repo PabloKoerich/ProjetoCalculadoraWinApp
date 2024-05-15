@@ -42,7 +42,7 @@
             rdbAdicao = new RadioButton();
             btnCalcular = new Button();
             btnLimpar = new Button();
-            listBox1 = new ListBox();
+            ListaDeHistorico = new ListBox();
             label4 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -199,16 +199,16 @@
             btnLimpar.UseVisualStyleBackColor = true;
             btnLimpar.Click += BotaoLimpar;
             // 
-            // listBox1
+            // ListaDeHistorico
             // 
-            listBox1.BorderStyle = BorderStyle.FixedSingle;
-            listBox1.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(102, 414);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(360, 116);
-            listBox1.TabIndex = 8;
-            listBox1.SelectedIndexChanged += ListaHistorico;
+            ListaDeHistorico.BorderStyle = BorderStyle.FixedSingle;
+            ListaDeHistorico.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ListaDeHistorico.FormattingEnabled = true;
+            ListaDeHistorico.Location = new Point(102, 414);
+            ListaDeHistorico.Name = "ListaDeHistorico";
+            ListaDeHistorico.Size = new Size(360, 116);
+            ListaDeHistorico.TabIndex = 8;
+            ListaDeHistorico.SelectedIndexChanged += ListaHistorico;
             // 
             // label4
             // 
@@ -228,7 +228,7 @@
             BackColor = Color.Teal;
             ClientSize = new Size(549, 564);
             Controls.Add(label4);
-            Controls.Add(listBox1);
+            Controls.Add(ListaDeHistorico);
             Controls.Add(btnLimpar);
             Controls.Add(btnCalcular);
             Controls.Add(groupBox2);
@@ -251,7 +251,6 @@
         private Label label1;
         private Button btnCalcular;
         private Button btnLimpar;
-        private ListBox listBox1;
         private Label label3;
         private TextBox txtPrimeiroNumero;
         private TextBox txtSegundoNumero;
@@ -261,5 +260,6 @@
         private RadioButton rdbMultiplicacao;
         private RadioButton rdbAdicao;
         private Label label4;
+        public ListBox ListaDeHistorico;
     }
 }
