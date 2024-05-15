@@ -9,11 +9,11 @@ namespace ProjetoCalculadoraWinApp
 
         private void BotaoCalcular(object sender, EventArgs e)
         {
-            // ler valores primeiro e segundo numeros
+            // ler valores do primeiro e segundo numeros.
             double primeiroNumero = Convert.ToDouble(txtPrimeiroNumero.Text);
             double segundoNumero = Convert.ToDouble(txtSegundoNumero.Text);
 
-            // checar a operação escolhida
+            // checagem da operação escolhida.
             double resultado = 0;
 
             if (rdbAdicao.Checked)
@@ -28,7 +28,7 @@ namespace ProjetoCalculadoraWinApp
             if (rdbDivisao.Checked)
                 resultado = primeiroNumero / segundoNumero;
 
-            // calcular e imprimir o resultado
+            // calcular e imprimir na tela o resultado.
             txtResultado.Text = resultado.ToString();
         }
 
