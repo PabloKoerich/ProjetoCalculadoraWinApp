@@ -32,7 +32,7 @@ namespace ProjetoCalculadoraWinApp
             txtResultado.Text = resultado.ToString();
         }
 
-        private void BotaoLimpar(object sender, EventArgs e)
+        private void BotaoLimpar(object sender, EventArgs e) // opção limpar tela.
         {
             txtPrimeiroNumero.Clear();
             txtSegundoNumero.Clear();   
