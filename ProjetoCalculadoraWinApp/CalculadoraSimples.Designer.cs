@@ -90,16 +90,16 @@
             txtResultado.Location = new Point(272, 51);
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(68, 26);
-            txtResultado.TabIndex = 10;
+            txtResultado.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(262, 25);
             label3.Name = "label3";
-            label3.Size = new Size(87, 19);
+            label3.Size = new Size(93, 19);
             label3.TabIndex = 2;
-            label3.Text = "Resultado";
+            label3.Text = "Resultado:";
             // 
             // label2
             // 

@@ -1,8 +1,9 @@
-﻿namespace ProjetoCalculadoraWinApp
+﻿using System.Linq;
+
+namespace ProjetoCalculadoraWinApp
 {
     public partial class CalculadoraSimples : Form
     {
-        private const bool Falso = false;
         public string historico;
 
         public CalculadoraSimples()
@@ -40,8 +41,8 @@
                 ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //histórico de Operações.
             }
 
-            ////memsagem de erro, caso não digite um numero (em criação!)
-            //if (PrimeiroNumero == 0)
+                                               //memsagem de erro, caso não digite um numero (em criação!)
+            //if (txtPrimeiroNumero.Text.
             //{
             //    MessageBox.Show("Digite um número válido!");
             //}
