@@ -76,7 +76,7 @@
             // txtSegundoNumero
             // 
             txtSegundoNumero.BorderStyle = BorderStyle.FixedSingle;
-            txtSegundoNumero.Font = new Font("Arial", 10.0173912F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSegundoNumero.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtSegundoNumero.Location = new Point(169, 56);
             txtSegundoNumero.Name = "txtSegundoNumero";
             txtSegundoNumero.Size = new Size(60, 26);
@@ -208,7 +208,6 @@
             ListaDeHistorico.Name = "ListaDeHistorico";
             ListaDeHistorico.Size = new Size(360, 116);
             ListaDeHistorico.TabIndex = 8;
-            ListaDeHistorico.SelectedIndexChanged += ListaHistorico;
             // 
             // label4
             // 

@@ -1,8 +1,8 @@
-namespace ProjetoCalculadoraWinApp
+﻿namespace ProjetoCalculadoraWinApp
 {
     public partial class CalculadoraSimples : Form
     {
-        private string historico; 
+        public string historico;
 
         public CalculadoraSimples()
         {
@@ -15,33 +15,48 @@ namespace ProjetoCalculadoraWinApp
             double primeiroNumero = Convert.ToDouble(txtPrimeiroNumero.Text);
             double segundoNumero = Convert.ToDouble(txtSegundoNumero.Text);
 
-            // checagem da opera��o escolhida.
+            // checagem da operação escolhida.
             double resultado = 0;
 
-            if (rdbAdicao.Checked) resultado = primeiroNumero + segundoNumero;
+            if (rdbAdicao.Checked)
+            {
+                resultado = primeiroNumero + segundoNumero;
+                ListaDeHistorico.Items.Add(primeiroNumero + "+" + segundoNumero + "=" + resultado); //histórico de Operações.
+            }
 
-            if (rdbSubtracao.Checked) resultado = primeiroNumero - segundoNumero;
-
-            if (rdbMultiplicacao.Checked) resultado = primeiroNumero * segundoNumero;
-
-            if (rdbDivisao.Checked) resultado = primeiroNumero / segundoNumero;
+           if (rdbSubtracao.Checked)
+            {
+                resultado = primeiroNumero - segundoNumero;
+                ListaDeHistorico.Items.Add(primeiroNumero + "-" + segundoNumero + "=" + resultado); //histórico de Operações.
+            }          
             
+            if (rdbMultiplicacao.Checked)
+            {
+                resultado = primeiroNumero * segundoNumero;
+                ListaDeHistorico.Items.Add(primeiroNumero + "*" + segundoNumero + "=" + resultado); //histórico de Operações.
+            }
+            
+            if (rdbDivisao.Checked)
+            {
+                resultado = primeiroNumero / segundoNumero;
+                ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //histórico de Operações.
+            }
+                        
             // calcular e imprimir na tela o resultado.
             txtResultado.Text = resultado.ToString();
         }
-
-        private void BotaoLimpar(object sender, EventArgs e) // op��o limpar tela.
+                         // opção limpar tela.
+        private void BotaoLimpar(object sender, EventArgs e)
         {
             txtPrimeiroNumero.Clear();
             txtSegundoNumero.Clear();
             txtResultado.Clear();
             rdbAdicao.Checked = true;
         }
-
-        private void ListaHistorico(object sender, EventArgs e) // Lista de hist�rico de Opera��es.
-        {
-            string ListaHistorico = historico; 
-            historico = txtResultado.Text;
-        }    
-     }
+    }
 }
+
+
+
+
+
