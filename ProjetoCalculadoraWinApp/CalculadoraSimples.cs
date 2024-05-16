@@ -42,6 +42,13 @@
                 ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //histórico de Operações.
             }
 
+            //if (rdbAdicao = Convert.ToString) false;
+                    
+            //    false && rdbSubtracao = false && rdbMultiplicacao = false && rdbDivisao = false);
+            //{
+            //    MessageBox.Show("Selecione uma operação!");
+            //}
+
             // calcular e imprimir na tela o resultado.
             txtResultado.Text = resultado.ToString();
         }
@@ -56,7 +63,7 @@
 
         private void CalculadoraSimples_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Iniciar a Calcularoda?");
+            MessageBox.Show("Iniciar a Calculadora?");
         }
 
         //private void LimparHistorico(object sender, EventArgs e)
