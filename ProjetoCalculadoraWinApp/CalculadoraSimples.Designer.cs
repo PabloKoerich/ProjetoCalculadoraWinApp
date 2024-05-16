@@ -44,6 +44,7 @@
             btnLimpar = new Button();
             ListaDeHistorico = new ListBox();
             label4 = new Label();
+            LimparHistórico = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -191,7 +192,7 @@
             // btnLimpar
             // 
             btnLimpar.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLimpar.Location = new Point(101, 359);
+            btnLimpar.Location = new Point(102, 351);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(360, 28);
             btnLimpar.TabIndex = 7;
@@ -204,7 +205,7 @@
             ListaDeHistorico.BorderStyle = BorderStyle.FixedSingle;
             ListaDeHistorico.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ListaDeHistorico.FormattingEnabled = true;
-            ListaDeHistorico.Location = new Point(102, 414);
+            ListaDeHistorico.Location = new Point(102, 440);
             ListaDeHistorico.Name = "ListaDeHistorico";
             ListaDeHistorico.Size = new Size(360, 116);
             ListaDeHistorico.TabIndex = 8;
@@ -214,18 +215,29 @@
             label4.AutoSize = true;
             label4.BackColor = Color.White;
             label4.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(184, 396);
+            label4.Location = new Point(184, 422);
             label4.Name = "label4";
             label4.Size = new Size(194, 19);
             label4.TabIndex = 8;
             label4.Text = "Histórico de Operações:";
+            // 
+            // LimparHistórico
+            // 
+            LimparHistórico.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LimparHistórico.Location = new Point(102, 385);
+            LimparHistórico.Name = "LimparHistórico";
+            LimparHistórico.Size = new Size(360, 28);
+            LimparHistórico.TabIndex = 9;
+            LimparHistórico.Text = "Limpar Histórico:";
+            LimparHistórico.UseVisualStyleBackColor = true;
             // 
             // CalculadoraSimples
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
-            ClientSize = new Size(549, 564);
+            ClientSize = new Size(549, 583);
+            Controls.Add(LimparHistórico);
             Controls.Add(label4);
             Controls.Add(ListaDeHistorico);
             Controls.Add(btnLimpar);
@@ -234,6 +246,7 @@
             Controls.Add(groupBox1);
             Name = "CalculadoraSimples";
             Text = "ProjetoCalculadoraSimples";
+            Load += CalculadoraSimples_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -260,5 +273,6 @@
         private RadioButton rdbAdicao;
         private Label label4;
         public ListBox ListaDeHistorico;
+        private Button LimparHistórico;
     }
 }

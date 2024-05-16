@@ -24,28 +24,28 @@
                 ListaDeHistorico.Items.Add(primeiroNumero + "+" + segundoNumero + "=" + resultado); //histórico de Operações.
             }
 
-           if (rdbSubtracao.Checked)
+            if (rdbSubtracao.Checked)
             {
                 resultado = primeiroNumero - segundoNumero;
                 ListaDeHistorico.Items.Add(primeiroNumero + "-" + segundoNumero + "=" + resultado); //histórico de Operações.
-            }          
-            
+            }
+
             if (rdbMultiplicacao.Checked)
             {
                 resultado = primeiroNumero * segundoNumero;
                 ListaDeHistorico.Items.Add(primeiroNumero + "*" + segundoNumero + "=" + resultado); //histórico de Operações.
             }
-            
+
             if (rdbDivisao.Checked)
             {
                 resultado = primeiroNumero / segundoNumero;
                 ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //histórico de Operações.
             }
-                        
+
             // calcular e imprimir na tela o resultado.
             txtResultado.Text = resultado.ToString();
         }
-                         // opção limpar tela.
+        // opção limpar tela.
         private void BotaoLimpar(object sender, EventArgs e)
         {
             txtPrimeiroNumero.Clear();
@@ -53,6 +53,16 @@
             txtResultado.Clear();
             rdbAdicao.Checked = true;
         }
+
+        private void CalculadoraSimples_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Iniciar a Calcularoda?");
+        }
+
+        //private void LimparHistorico(object sender, EventArgs e)
+        //{
+        //    ListaDeHistorico.Click += new EventHandler(BotaoLimpar);
+        //}
     }
 }
 
