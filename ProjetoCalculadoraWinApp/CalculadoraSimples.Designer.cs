@@ -90,7 +90,7 @@
             txtResultado.Location = new Point(272, 51);
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(68, 26);
-            txtResultado.TabIndex = 9;
+            txtResultado.TabIndex = 10;
             // 
             // label3
             // 
@@ -208,7 +208,7 @@
             ListaDeHistorico.Location = new Point(102, 440);
             ListaDeHistorico.Name = "ListaDeHistorico";
             ListaDeHistorico.Size = new Size(360, 116);
-            ListaDeHistorico.TabIndex = 8;
+            ListaDeHistorico.TabIndex = 9;
             // 
             // label4
             // 
@@ -227,9 +227,10 @@
             LimparHistórico.Location = new Point(102, 385);
             LimparHistórico.Name = "LimparHistórico";
             LimparHistórico.Size = new Size(360, 28);
-            LimparHistórico.TabIndex = 9;
+            LimparHistórico.TabIndex = 8;
             LimparHistórico.Text = "Limpar Histórico:";
             LimparHistórico.UseVisualStyleBackColor = true;
+            LimparHistórico.Click += LimparHistórico_Click;
             // 
             // CalculadoraSimples
             // 
