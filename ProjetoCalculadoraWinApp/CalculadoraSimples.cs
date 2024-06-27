@@ -1,10 +1,9 @@
-﻿using System.Linq;
-
-namespace ProjetoCalculadoraWinApp
+﻿namespace ProjetoCalculadoraWinApp
 {
     public partial class CalculadoraSimples : Form
     {
         public string historico;
+        public string resultado;
 
         public CalculadoraSimples()
         {
@@ -17,37 +16,33 @@ namespace ProjetoCalculadoraWinApp
             double primeiroNumero = Convert.ToDouble(txtPrimeiroNumero.Text);
             double segundoNumero = Convert.ToDouble(txtSegundoNumero.Text);
 
-            // checagem da operação escolhida e calcular e imprimir na tela o resultado.
-            double resultado = 0;
+            double resultado = 0;  // Imprimir na tela o resultado.
 
+            // checagem da operação escolhida, calcular.
             if (rdbAdicao.Checked)
             {
                 resultado = primeiroNumero + segundoNumero;
-                ListaDeHistorico.Items.Add(primeiroNumero + "+" + segundoNumero + "=" + resultado); //histórico de Operações.
+                ListaDeHistorico.Items.Add(primeiroNumero + "+" + segundoNumero + "=" + resultado); //imprime a operação na lista de histórico.
             }
             if (rdbSubtracao.Checked)
             {
                 resultado = primeiroNumero - segundoNumero;
-                ListaDeHistorico.Items.Add(primeiroNumero + "-" + segundoNumero + "=" + resultado); //histórico de Operações.
+                ListaDeHistorico.Items.Add(primeiroNumero + "-" + segundoNumero + "=" + resultado); //imprime a operação na lista de histórico.
             }
             if (rdbMultiplicacao.Checked)
             {
                 resultado = primeiroNumero * segundoNumero;
-                ListaDeHistorico.Items.Add(primeiroNumero + "*" + segundoNumero + "=" + resultado); //histórico de Operações.
+                ListaDeHistorico.Items.Add(primeiroNumero + "*" + segundoNumero + "=" + resultado); //imprime a operação na lista de histórico.
             }
             if (rdbDivisao.Checked)
             {
                 resultado = primeiroNumero / segundoNumero;
-                ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //histórico de Operações.
+                ListaDeHistorico.Items.Add(primeiroNumero + "/" + segundoNumero + "=" + resultado); //imprime a operação na lista de histórico.
             }
-
-                                               //memsagem de erro, caso não digite um numero (em criação!)
-            //if (txtPrimeiroNumero.Text.
-            //{
-            //    MessageBox.Show("Digite um número válido!");
-            //}
-
+             
+            txtResultado.Text = resultado.ToString(); //imprime resultado operação na tela 
         }
+
         // opção limpar tela.
         private void BotaoLimpar(object sender, EventArgs e)
         {
@@ -57,19 +52,16 @@ namespace ProjetoCalculadoraWinApp
             rdbAdicao.Checked = true;
         }
 
-        private void CalculadoraSimples_Load(object sender, EventArgs e) //mensagem de inicio da calculadora.
-        {
-            MessageBox.Show("Iniciar a Calculadora?");
-        }
-
-        private void LimparHistórico_Click(object sender, EventArgs e) //limpar histórico
+        //limpar histórico
+        private void LimparHistórico_Click(object sender, EventArgs e)
         {
             ListaDeHistorico.Items.Clear();
         }
+
+                      //mensagem de inicio da calculadora.
+        private void CalculadoraSimples_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Deseja iniciar a calculadora?");
+        }
     }
 }
-
-
-
-
-
