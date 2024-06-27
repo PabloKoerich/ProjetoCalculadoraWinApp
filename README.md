@@ -5,4 +5,4 @@ Projeto criado para a Academia do Programador 2024.
 
 
 
-Primeiro projeto a utilizar aplicações Desktop.
+Primeiro projeto utilizando aplicações Desktop.
