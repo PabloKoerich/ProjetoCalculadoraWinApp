@@ -58,7 +58,7 @@
             ListaDeHistorico.Items.Clear();
         }
 
-                      //mensagem de inicio da calculadora.
+        //mensagem de inicio da calculadora.
         private void CalculadoraSimples_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Deseja iniciar a calculadora?");

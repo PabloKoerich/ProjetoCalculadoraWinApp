@@ -58,9 +58,9 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(101, 13);
+            groupBox1.Location = new Point(114, 13);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(360, 111);
+            groupBox1.Size = new Size(405, 111);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Informe os Valores:";
@@ -69,33 +69,33 @@
             // 
             txtPrimeiroNumero.BorderStyle = BorderStyle.FixedSingle;
             txtPrimeiroNumero.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtPrimeiroNumero.Location = new Point(169, 25);
+            txtPrimeiroNumero.Location = new Point(190, 25);
             txtPrimeiroNumero.Name = "txtPrimeiroNumero";
-            txtPrimeiroNumero.Size = new Size(60, 27);
+            txtPrimeiroNumero.Size = new Size(67, 27);
             txtPrimeiroNumero.TabIndex = 0;
             // 
             // txtSegundoNumero
             // 
             txtSegundoNumero.BorderStyle = BorderStyle.FixedSingle;
             txtSegundoNumero.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSegundoNumero.Location = new Point(169, 59);
+            txtSegundoNumero.Location = new Point(190, 59);
             txtSegundoNumero.Name = "txtSegundoNumero";
-            txtSegundoNumero.Size = new Size(60, 27);
+            txtSegundoNumero.Size = new Size(67, 27);
             txtSegundoNumero.TabIndex = 1;
             // 
             // txtResultado
             // 
             txtResultado.BorderStyle = BorderStyle.FixedSingle;
             txtResultado.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtResultado.Location = new Point(272, 54);
+            txtResultado.Location = new Point(306, 54);
             txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(68, 27);
+            txtResultado.Size = new Size(76, 27);
             txtResultado.TabIndex = 0;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(262, 26);
+            label3.Location = new Point(295, 26);
             label3.Name = "label3";
             label3.Size = new Size(94, 19);
             label3.TabIndex = 2;
@@ -104,7 +104,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 58);
+            label2.Location = new Point(22, 58);
             label2.Name = "label2";
             label2.Size = new Size(152, 19);
             label2.TabIndex = 1;
@@ -113,7 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(20, 32);
+            label1.Location = new Point(22, 32);
             label1.Name = "label1";
             label1.Size = new Size(148, 19);
             label1.TabIndex = 0;
@@ -126,9 +126,9 @@
             groupBox2.Controls.Add(rdbMultiplicacao);
             groupBox2.Controls.Add(rdbAdicao);
             groupBox2.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(101, 136);
+            groupBox2.Location = new Point(114, 136);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(360, 191);
+            groupBox2.Size = new Size(405, 191);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
             groupBox2.Text = "Escolha a Opção:";
@@ -136,9 +136,9 @@
             // rdbDivisao
             // 
             rdbDivisao.AutoSize = true;
-            rdbDivisao.Location = new Point(24, 122);
+            rdbDivisao.Location = new Point(27, 122);
             rdbDivisao.Name = "rdbDivisao";
-            rdbDivisao.Size = new Size(87, 23);
+            rdbDivisao.Size = new Size(98, 23);
             rdbDivisao.TabIndex = 5;
             rdbDivisao.TabStop = true;
             rdbDivisao.Text = "Divisão";
@@ -147,9 +147,9 @@
             // rdbSubtracao
             // 
             rdbSubtracao.AutoSize = true;
-            rdbSubtracao.Location = new Point(24, 61);
+            rdbSubtracao.Location = new Point(27, 61);
             rdbSubtracao.Name = "rdbSubtracao";
-            rdbSubtracao.Size = new Size(111, 23);
+            rdbSubtracao.Size = new Size(125, 23);
             rdbSubtracao.TabIndex = 3;
             rdbSubtracao.TabStop = true;
             rdbSubtracao.Text = "Subtração";
@@ -158,9 +158,9 @@
             // rdbMultiplicacao
             // 
             rdbMultiplicacao.AutoSize = true;
-            rdbMultiplicacao.Location = new Point(24, 92);
+            rdbMultiplicacao.Location = new Point(27, 92);
             rdbMultiplicacao.Name = "rdbMultiplicacao";
-            rdbMultiplicacao.Size = new Size(131, 23);
+            rdbMultiplicacao.Size = new Size(147, 23);
             rdbMultiplicacao.TabIndex = 4;
             rdbMultiplicacao.TabStop = true;
             rdbMultiplicacao.Text = "Multiplicação";
@@ -170,9 +170,9 @@
             // 
             rdbAdicao.AutoSize = true;
             rdbAdicao.Checked = true;
-            rdbAdicao.Location = new Point(24, 31);
+            rdbAdicao.Location = new Point(27, 31);
             rdbAdicao.Name = "rdbAdicao";
-            rdbAdicao.Size = new Size(83, 23);
+            rdbAdicao.Size = new Size(93, 23);
             rdbAdicao.TabIndex = 2;
             rdbAdicao.TabStop = true;
             rdbAdicao.Text = "Adição";
@@ -181,9 +181,9 @@
             // btnCalcular
             // 
             btnCalcular.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCalcular.Location = new Point(101, 333);
+            btnCalcular.Location = new Point(114, 333);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(360, 29);
+            btnCalcular.Size = new Size(405, 29);
             btnCalcular.TabIndex = 6;
             btnCalcular.Text = "Calcular:";
             btnCalcular.UseVisualStyleBackColor = true;
@@ -192,9 +192,9 @@
             // btnLimpar
             // 
             btnLimpar.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLimpar.Location = new Point(102, 369);
+            btnLimpar.Location = new Point(115, 369);
             btnLimpar.Name = "btnLimpar";
-            btnLimpar.Size = new Size(360, 29);
+            btnLimpar.Size = new Size(405, 29);
             btnLimpar.TabIndex = 7;
             btnLimpar.Text = "Limpar Tela:";
             btnLimpar.UseVisualStyleBackColor = true;
@@ -206,9 +206,9 @@
             ListaDeHistorico.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ListaDeHistorico.FormattingEnabled = true;
             ListaDeHistorico.ItemHeight = 19;
-            ListaDeHistorico.Location = new Point(102, 463);
+            ListaDeHistorico.Location = new Point(115, 463);
             ListaDeHistorico.Name = "ListaDeHistorico";
-            ListaDeHistorico.Size = new Size(360, 116);
+            ListaDeHistorico.Size = new Size(405, 116);
             ListaDeHistorico.TabIndex = 9;
             // 
             // label4
@@ -216,7 +216,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.White;
             label4.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(184, 444);
+            label4.Location = new Point(207, 444);
             label4.Name = "label4";
             label4.Size = new Size(200, 19);
             label4.TabIndex = 8;
@@ -225,9 +225,9 @@
             // LimparHistórico
             // 
             LimparHistórico.Font = new Font("Arial", 10.0173912F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LimparHistórico.Location = new Point(102, 405);
+            LimparHistórico.Location = new Point(115, 405);
             LimparHistórico.Name = "LimparHistórico";
-            LimparHistórico.Size = new Size(360, 29);
+            LimparHistórico.Size = new Size(405, 29);
             LimparHistórico.TabIndex = 8;
             LimparHistórico.Text = "Limpar Histórico:";
             LimparHistórico.UseVisualStyleBackColor = true;
@@ -235,10 +235,11 @@
             // 
             // CalculadoraSimples
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.Teal;
-            ClientSize = new Size(549, 614);
+            ClientSize = new Size(618, 614);
             Controls.Add(LimparHistórico);
             Controls.Add(label4);
             Controls.Add(ListaDeHistorico);
@@ -246,8 +247,13 @@
             Controls.Add(btnCalcular);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "CalculadoraSimples";
-            Text = "ProjetoCalculadoraSimples";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Projeto Calculadora Simples 2024";
             Load += CalculadoraSimples_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
